@@ -21,10 +21,12 @@ class TV:
         self._estado= estado
     #metodo get y set numTV
     @classmethod
+    def setNumTV(cls,numTV):
+        cls._numTV = numTV
     def getNumTV():
         return TV._numTV
-    def setNumTV(cls,numTV):
-        cls._numTV=numTV
+    
+        
     #metodo get y set precio
     def getPrecio(self):
         return self._precio
