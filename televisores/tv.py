@@ -42,7 +42,7 @@ class TV:
     def getVolumen(self):
         return self._volumen
     def setVolumen(self,volumen):
-        if (self._estado and self._volumen<7 and self._volumen>-1):
+        if (self._estado==True and self._volumen<8 and self._volumen>-1):
             self._volumen=volumen
     #metodo turn off y on
     def turnOn(self):
@@ -51,17 +51,17 @@ class TV:
         self._estado=False
     #metodo canal up y down
     def canalUp(self):
-        if(self._estado and self._canal<120):
+        if(self._estado==True and self._canal<120):
             self._canal+=1
     def canalDown(self):
         if(self._estado and self._canal>1):
             self._canal+=1
     #metodo volumen up y Down
     def volumenUp(self):
-        if(self._estado and self._volumen<7):
+        if(self._estado==True and self._volumen<7):
             self._volumen+=1
     def volumenDown(self):
-        if(self._estado and self._volumen>0):
+        if(self._estado==True and self._volumen>0):
             self._volumen-=1
     #metodo Control get y set
     def setControl(self,control):
