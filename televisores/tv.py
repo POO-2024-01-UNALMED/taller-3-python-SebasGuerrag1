@@ -23,8 +23,8 @@ class TV:
     @classmethod
     def getNumTV(self):
         return self._numTV
-    def setNumTV(self,num):
-        self._numTV=num
+    def setNumTV(self,numTV):
+        self._numTV=numTV
     #metodo get y set precio
     def getPrecio(self):
         return self._precio
